@@ -1,0 +1,1 @@
+2024-09-06T10:19:55.572281Z  WARN turborepo_filewatch: encountered error watching filesystem enumerating recursive watch: IO error for operation on /home/hellotalk/code/web/demo/node_modules/.pnpm/vue@3.5.3_typescript@5.5.4/node_modules/vue_tmp_1212688/jsx-runtime: No such file or directory (os error 2)

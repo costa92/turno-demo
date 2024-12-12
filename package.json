@@ -1,0 +1,33 @@
+{
+	"name": "demo-turborepo",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo run dev",
+		"build:dev:filter": "turbo run build dev --filter=@relaxed/hook",
+		"lint": "turbo lint",
+		"buildClient": "turbo run build:test --filter apps/docs",
+		"build:hooks": "pnpm build --filter hooks",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\""
+	},
+	"packageManager": "pnpm@8.15.6",
+	"devDependencies": {
+		"@types/fs-extra": "^9.0.13",
+		"prettier": "^3.2.5",
+		"turbo": "latest",
+		"typescript": "^5.5.4",
+		"tsup": "^6.7.0",
+		"chalk": "^2.4.2",
+		"fs-extra": "^10.1.0",
+		"unbuild": "^2.0.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-customizable"
+		}
+	},
+	"dependencies": {
+		"vue": "^3.5.3",
+		"fast-glob": "^3.2.12"
+	}
+}
